@@ -462,6 +462,14 @@ section {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
+.card-portfolio{
+  height: 40vh;
+  width: 150vh;
+   
+ }
+ .card-text-size{
+  font-size: 65%;
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
@@ -923,6 +931,14 @@ section {
   .breadcrumbs ol {
     display: block;
   }
+  .card-portfolio{
+    height: auto;
+    width: 100%;
+  }
+  .card-text-size{
+    font-size: 80%;
+  }
+
   .breadcrumbs ol li {
     display: inline-block;
   }
