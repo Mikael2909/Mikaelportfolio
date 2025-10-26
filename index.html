@@ -78,46 +78,49 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about section-bg">
       <div class="container">
-
         <div class="section-title">
           <h2>About</h2>
           <p style="text-align: justify;">Hello! I'm Mikael Petrus Saragi, an individual with a strong background in electricity and Arduino, and a passion for programming, particularly in website and game development since 2019. In website development, I specialize in front-end development, while in game development, I focus on game programming. Throughout my journey in website and game development, my primary focus has been on ensuring functional efficiency. I aim to create websites and games that are not only engaging but also serve practical purposes for users. As a website and game developer, I have cultivated a meticulous approach to my work, striving for excellence in every project.
           </p>
         </div>
-
+        
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>My Biodata</h3>
-           
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>29 September 2000</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>085262271031</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Medan, Indonesia</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>mikaelsaragi29@gmail.com</span></li>
-                 
-                </ul>
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="about-content glass-card">
+              <h3>Game & Web Developer</h3>
+              <p class="fst-italic">
+                Passionate about creating functional and engaging digital experiences.
+              </p>
+              <div class="about-stats">
+                <div class="stat-item">
+                  <span class="stat-number">5+</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">10+</span>
+                  <span class="stat-label">Projects Completed</span>
+                </div>
               </div>
             </div>
-           
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="about-info glass-card">
+              <h3>Personal Info</h3>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Physics</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>University:</strong> <span>North Sumatra University</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Medan, Indonesia</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>mikaelsaragi29@gmail.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+              </ul>
+            </div>
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
-  
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
       <div class="container">
@@ -198,12 +201,12 @@
     <!-- Soft Skill Section -->
 
     
-    <section id="skills" class="skills section-bg">
+    <section id="soft-skills" class="skills section-bg">
       <div class="container">
-
         <div class="section-title">
           <h2>Soft Skills</h2>
-                  </div>
+          <p>Personal and interpersonal skills that enhance my professional capabilities.</p>
+        </div>
 
         <div class="row skills-content">
 
@@ -262,12 +265,11 @@
     <!-- End Soft Skill -->
 
     <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+    <section id="resume" class="resume section-bg">
       <div class="container">
-
         <div class="section-title">
           <h2>Resume</h2>
-          
+          <p>My educational background and professional experience in technology and development.</p>
         </div>
 
         <div class="row">
@@ -333,11 +335,12 @@
       <div class="container">
         <div class="section-title">
           <h2>Portfolio</h2>
+          <p>A showcase of my projects in web development, game development, and design.</p>
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
+            <ul id="portfolio-flters" class="portfolio-filters-glass">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-web">Web</li>
               <li data-filter=".filter-game">Game</li>
@@ -350,7 +353,7 @@
           <div class="col-lg-12 col-md-6 portfolio-item filter-web">
             <div class="card mx-auto card-portfolio d-flex flex-column flex-md-row justify-content-md-center">
               <img src="assets/img/portfolio/personal-web.png"
-                class="card-img-top img-fluid img-thumbnail border border-5 border-info-subtle" alt="..."  style="width: 115vh; height: auto;"/>
+                class="card-img-top img-fluid img-thumbnail border border-5 border-info-subtle portfolio-image" alt="..." />
               <div class="card-body flex-md-row">
                 <h4 class="card-title fw-bold text-primary mb-3">
                  Personal Notes Website
@@ -373,7 +376,7 @@
 
           <div class="col-lg-12 col-md-6 portfolio-item filter-game">
             <div class="card mx-auto card-portfolio d-flex flex-column flex-md-row justify-content-md-center">
-              <iframe class="img-fluid img-thumbnail border border-5 border-info-subtle" src="https://www.youtube.com/embed/B8BG6_BWMeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: auto; width:188vh" allowfullscreen></iframe>
+              <iframe class="img-fluid img-thumbnail border border-5 border-info-subtle portfolio-iframe" src="https://www.youtube.com/embed/B8BG6_BWMeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <div class="card-body flex-md-row">
                 <h4 class="card-title fw-bold text-primary mb-3">
                   Survival Shooter
@@ -392,7 +395,7 @@
 
  <div  class="col-lg-12 col-md-6 portfolio-item filter-design">
             <div class="card mx-auto card-portfolio d-flex flex-column flex-md-row justify-content-md-center">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="card-img-top img-fluid img-thumbnail border border-5 border-info-subtle" alt="..." style="width: 180vh; height: auto;" />
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="card-img-top img-fluid img-thumbnail border border-5 border-info-subtle portfolio-image" alt="..." />
               <div class="card-body flex-md-row">
                 <h4 class="card-title fw-bold text-primary mb-3">UI Main Menu Design</h4>
                 <p class="card-text card-text-size" style="text-align: justify; ">
@@ -410,7 +413,7 @@
           <div class="col-lg-12 col-md-6 portfolio-item filter-web">
             <div class="card mx-auto card-portfolio d-flex flex-column flex-md-row justify-content-md-center">
               <img src="assets/img/portfolio/websiterestapi.png"
-                class="card-img-top img-fluid img-thumbnail border border-5 border-info-subtle" alt="..." style="width: 150vh; height: auto;" />
+                class="card-img-top img-fluid img-thumbnail border border-5 border-info-subtle portfolio-image" alt="..." />
               <div class="card-body flex-md-row">
                 <h4 class="card-title fw-bold text-primary mb-3">
                   Website Weather App
@@ -437,7 +440,7 @@
           <div class="col-lg-12 col-md-6 portfolio-item filter-web">
             <div class="card mx-auto card-portfolio d-flex flex-column flex-md-row justify-content-md-center">
               <img src="assets/img/portfolio/portfolio-1.jpg"
-                class="card-img-top img-fluid img-thumbnail border border-5 border-info-subtle" alt="..."  style="width: 100vh; height: auto;"/>
+                class="card-img-top img-fluid img-thumbnail border border-5 border-info-subtle portfolio-image" alt="..."/>
               <div class="card-body flex-md-row">
                 <h4 class="card-title fw-bold text-primary mb-3">
                   Website Simple ID Card Data Management
@@ -461,9 +464,9 @@
           <!-- Card 3 -->
           <div class="col-lg-12 col-md-6 portfolio-item filter-web">
             <div class="card mx-auto card-portfolio d-flex flex-column flex-md-row justify-content-md-center">
-              <iframe class="img-fluid img-thumbnail border border-5 border-info-subtle" src="https://www.youtube.com/embed/4ZsJXDMM_xo" frameborder="0"
+              <iframe class="img-fluid img-thumbnail border border-5 border-info-subtle portfolio-iframe" src="https://www.youtube.com/embed/4ZsJXDMM_xo" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen style="width: 165vh; height: auto;"></iframe>
+                allowfullscreen></iframe>
               <div class="card-body flex-md-row">
                 <h4 class="card-title fw-bold text-primary mb-3">
                   Simple Agricultural Equipment Loan Application Website
@@ -490,7 +493,7 @@
           <!-- Card 4 -->
           <div  class="col-lg-12 col-md-6 portfolio-item filter-design">
             <div class="card mx-auto card-portfolio d-flex flex-column flex-md-row justify-content-md-center">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="card-img-top img-fluid img-thumbnail border border-5 border-info-subtle" alt="..." style="width: 160vh; height: auto;" />
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="card-img-top img-fluid img-thumbnail border border-5 border-info-subtle portfolio-image" alt="..." />
               <div class="card-body flex-md-row">
                 <h4 class="card-title fw-bold text-primary mb-3">Environment Game Design</h4>
                 <p class="card-text card-text-size" style="text-align: justify; ">
@@ -508,7 +511,7 @@
         
           <div class="col-lg-12 col-md-6 portfolio-item filter-game">
             <div class="card mx-auto card-portfolio d-flex flex-column flex-md-row justify-content-md-center">
-              <iframe class="img-fluid img-thumbnail border border-5 border-info-subtle" src="https://www.youtube.com/embed/EGMd36sDg4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: auto; width:250vh" allowfullscreen></iframe>
+              <iframe class="img-fluid img-thumbnail border border-5 border-info-subtle portfolio-iframe" src="https://www.youtube.com/embed/EGMd36sDg4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <div class="portfolio-links">
               <div class="card-body flex-md-row">
                 <h4 class="card-title fw-bold text-primary mb-3">
@@ -530,7 +533,7 @@
         <div class="col-lg-12 col-md-6 portfolio-item filter-game">
           <div class="card mx-auto card-portfolio d-flex flex-column flex-md-row justify-content-md-center">
             <!-- <iframe class="img-fluid img-thumbnail border border-5 border-info-subtle" src="https://www.youtube.com/embed/EGMd36sDg4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: auto; width:250vh" allowfullscreen></iframe> -->
-            <iframe class="img-fluid img-thumbnail border border-5 border-info-subtle" src="https://www.youtube.com/embed/1EJIL4eEMok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height: auto; width:190vh" allowfullscreen></iframe>
+            <iframe class="img-fluid img-thumbnail border border-5 border-info-subtle portfolio-iframe" src="https://www.youtube.com/embed/1EJIL4eEMok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="portfolio-links">
             <div class="card-body flex-md-row">
               <h4 class="card-title fw-bold text-primary mb-3">
