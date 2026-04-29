@@ -50,7 +50,12 @@
       if (!navbarlink.hash) return
       let section = select(navbarlink.hash)
       if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+      
+      // Calculate section position range considering scroll offset
+      let sectionTop = section.offsetTop - 100
+      let sectionBottom = section.offsetTop + section.offsetHeight
+      
+      if (position >= sectionTop && position < sectionBottom) {
         navbarlink.classList.add('active')
       } else {
         navbarlink.classList.remove('active')
@@ -64,9 +69,23 @@
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
-    let elementPos = select(el).offsetTop
+    let element = select(el)
+    if (!element) return
+
+    // getBoundingClientRect().top gives position relative to viewport,
+    // adding window.scrollY converts it to absolute document position.
+    // This fixes the "one section above" bug caused by offsetTop being
+    // relative to the nearest positioned parent (e.g. <main>), not the document.
+    let elementPos = element.getBoundingClientRect().top + window.scrollY
+    let headerOffset = 0
+    
+    // On mobile, offset for the top navbar bar
+    if (window.innerWidth < 1200) {
+      headerOffset = 60
+    }
+    
     window.scrollTo({
-      top: elementPos,
+      top: elementPos - headerOffset,
       behavior: 'smooth'
     })
   }

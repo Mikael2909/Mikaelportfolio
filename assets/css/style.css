@@ -9,20 +9,27 @@
 --------------------------------------------------------------*/
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* PENTING: Offset untuk fixed header */
+  scroll-padding-top: 100px;
 }
 
 /* Fix navigation scroll positioning for sidebar layout */
 @media (min-width: 1200px) {
   #main section {
-    padding-top: 80px;
-    scroll-margin-top: 80px; /* PENTING: Tambahan untuk scroll offset */
+    scroll-margin-top: 100px;
   }
   
   /* Hero section tidak perlu offset */
   #main #hero {
-    padding-top: 0;
     scroll-margin-top: 0;
+  }
+  
+  section#about,
+  section#skills,
+  section#soft-skills,
+  section#resume,
+  section#portfolio,
+  section#contact {
+    scroll-margin-top: 100px;
   }
 }
 
@@ -236,11 +243,20 @@ h1, h2, h3, h4, h5, h6 {
   
   /* Adjust scroll offset untuk mobile */
   html {
-    scroll-padding-top: 60px;
+    scroll-padding-top: 70px;
   }
   
   #main section {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 70px;
+  }
+  
+  section#about,
+  section#skills,
+  section#soft-skills,
+  section#resume,
+  section#portfolio,
+  section#contact {
+    scroll-margin-top: 70px;
   }
 }
 /*--------------------------------------------------------------
@@ -412,7 +428,6 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
-  scroll-margin-top: 80px; /* PENTING: Offset untuk semua section */
 }
 
 /* Override untuk Hero Section */
