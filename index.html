@@ -111,7 +111,7 @@
                 <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Physics</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>University:</strong> <span>North Sumatra University</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Medan, Indonesia</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>mikaelsaragi29@gmail.com</span></li>
+                <li style="display:flex;align-items:center;"><i class="bi bi-chevron-right" style="flex-shrink:0;margin-right:8px;"></i><strong style="flex-shrink:0;margin-right:8px;">Email:</strong><span style="overflow-wrap:break-word;word-break:break-word;min-width:0;flex:1;">mikaelsaragi29@gmail.com</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
               </ul>
             </div>
@@ -616,7 +616,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzBUJhJuVWprBUvHY7UUb_xJVLB9Sts1n9dQzAvIyNh-ao4Vhkizk7S1idZgwWDGYTk/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxkylgurrDzV_I_BPAdjxd2frl9Kyeuw1fanjrsTJnNQj8NpjkhpIyRutvUHhtCSTQu/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
     form.addEventListener('submit', e => {
@@ -626,7 +626,7 @@
           msg.style.display="block"
           setTimeout(function(){
             msg.style.display="none"
-          },3000)
+          },5000)
           form.reset()
         })
         .catch(error => console.error('Error!', error.message))
